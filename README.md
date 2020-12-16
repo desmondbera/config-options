@@ -6,6 +6,7 @@ Running list of items included:
  - Hammerspoon config to resize windows:
    - Center, left-side, right-side, top-half, bottom-half, shrink, grow, quadrants (top-left, top-right, bottorom-left, bottom-right)
  - iTerm
+   - https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#step-1-install-powerlevel9k
    - Set theme 
 
 NOTE: This repo keeps a new individual .bash_profile OR .zshenv / .zshrc in each folder. You may combine each individual dot-file into your single .bash_profile or .zshrc / .zshenv
