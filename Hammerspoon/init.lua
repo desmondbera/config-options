@@ -60,6 +60,11 @@ function resizeWindowInSteps(increment)
   hs.window.focusedWindow():move({x=x, y=y, w=w, h=h}, nil, true, 0)
 end
 
+function moveToNextScreen()
+  local app = hs.window.focusedWindow()
+  app:moveToScreen(app:screen():next())
+end
+
 units = {
   right50       = { x = 0.50, y = 0.00, w = 0.50, h = 1.00 },
   left50        = { x = 0.00, y = 0.00, w = 0.50, h = 1.00 },
@@ -89,4 +94,4 @@ hs.hotkey.bind(mash, 'c', function() hs.window.focusedWindow():move(units.center
 hs.hotkey.bind(mash, 'R', function() hs.reload() end)
 hs.hotkey.bind(mash, '=', function() resizeWindowInSteps(true)  end)
 hs.hotkey.bind(mash, '-', function() resizeWindowInSteps(false) end)
-
+hs.hotkey.bind(mash, 'n', function() moveToNextScreen() end)
